@@ -1,0 +1,569 @@
+test> use Meubanco
+Meubanco> db.veiculos.insertOne({ "tipo": "moto", "marca": "Honda", "modelo": "CB 500X", "ano": 2022, "cor": "Vermelho", "preco": 42000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc83f46d3d1108407c290a')
+}
+Meubanco> db.veiculos.insertOne({ "tipo": "moto", "marca": "Kawasaki", "modelo": "Ninja 400", "ano": 2021, "cor": "Verde", "preco": 39000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc841f6d3d1108407c290b')
+}
+Meubanco> db.veiculos.insertOne({ "tipo": "moto", "marca": "Kawasaki", "modelo": "Ninja 400", "ano": 2021, "cor": "Verde", "preco": 39000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc84416d3d1108407c290c')
+}
+Meubanco> db.veiculo.insertOne({ "tipo": "caminhao", "marca": "Volvo", "modelo": "FH 540", "ano": 2020, "cor": "Branco", "preco": 480000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc84646d3d1108407c290d')
+}
+Meubanco> db.veiculos.insertOne({ "tipo": "caminhao", "marca": "Mercedes-Benz", "modelo": "Actros", "ano": 2019, "cor": "Cinza", "preco": 450000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc84866d3d1108407c290e')
+}
+Meubanco> db.veiculos.insertOne( { "tipo": "caminhao", "marca": "Scania", "modelo": "R 450", "ano": 2023, "cor": "Azul", "preco": 500000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc84a66d3d1108407c290f')
+}
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc837a6d3d1108407c2908'),
+    tipo: 'carro',
+    marca: 'Ford',
+    modelo: 'Fusion',
+    ano: 2018,
+    cor: 'Prata',
+    preco: 90000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84866d3d1108407c290e'),
+    tipo: 'caminhao',
+    marca: 'Mercedes-Benz',
+    modelo: 'Actros',
+    ano: 2019,
+    cor: 'Cinza',
+    preco: 450000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84a66d3d1108407c290f'),
+    tipo: 'caminhao',
+    marca: 'Scania',
+    modelo: 'R 450',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 500000,
+    disponivel: true
+  }
+]
+Meubanco> db.veiculos.insertOne({ "tipo": "carro", "marca": "Honda", "modelo": "Civic", "ano": 2021, "cor": "Branco", "preco": 110000, "disponivel":Meubanco> db.veiculos.insertOne({ "tipo": "carro", "marca": "Honda", "modelo": "Civic", "ano": 2021, "cor": "Branco", "preco": 110000, "disponivel": true })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69bc85706d3d1108407c2910')
+}
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc837a6d3d1108407c2908'),
+    tipo: 'carro',
+    marca: 'Ford',
+    modelo: 'Fusion',
+    ano: 2018,
+    cor: 'Prata',
+    preco: 90000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84866d3d1108407c290e'),
+    tipo: 'caminhao',
+    marca: 'Mercedes-Benz',
+    modelo: 'Actros',
+    ano: 2019,
+    cor: 'Cinza',
+    preco: 450000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84a66d3d1108407c290f'),
+    tipo: 'caminhao',
+    marca: 'Scania',
+    modelo: 'R 450',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 500000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc85706d3d1108407c2910'),
+    tipo: 'carro',
+    marca: 'Honda',
+    modelo: 'Civic',
+    ano: 2021,
+    cor: 'Branco',
+    preco: 110000,
+    disponivel: true
+  }
+Meubanco> db.veiculos.updateOne({_id: ObjectId('69bc85706d3d1108407c2910')},{$set : {"disponivel":"false"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc837a6d3d1108407c2908'),
+    tipo: 'carro',
+    marca: 'Ford',
+    modelo: 'Fusion',
+    ano: 2018,
+    cor: 'Prata',
+    preco: 90000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84866d3d1108407c290e'),
+    tipo: 'caminhao',
+    marca: 'Mercedes-Benz',
+    modelo: 'Actros',
+    ano: 2019,
+    cor: 'Cinza',
+    preco: 450000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84a66d3d1108407c290f'),
+    tipo: 'caminhao',
+    marca: 'Scania',
+    modelo: 'R 450',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 500000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc85706d3d1108407c2910'),
+    tipo: 'carro',
+    marca: 'Honda',
+    modelo: 'Civic',
+    ano: 2021,
+    cor: 'Branco',
+    preco: 110000,
+    disponivel: 'false'
+  }
+Meubanco> db.veiculos.updateMany({ "marca":"Honda"},{ $set: { "garantia": "3 Anos"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc837a6d3d1108407c2908'),
+    tipo: 'carro',
+    marca: 'Ford',
+    modelo: 'Fusion',
+    ano: 2018,
+    cor: 'Prata',
+    preco: 90000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true,
+    garantia: '3 Anos'
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84866d3d1108407c290e'),
+    tipo: 'caminhao',
+    marca: 'Mercedes-Benz',
+    modelo: 'Actros',
+    ano: 2019,
+    cor: 'Cinza',
+    preco: 450000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84a66d3d1108407c290f'),
+    tipo: 'caminhao',
+    marca: 'Scania',
+    modelo: 'R 450',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 500000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc85706d3d1108407c2910'),
+    tipo: 'carro',
+    marca: 'Honda',
+    modelo: 'Civic',
+    ano: 2021,
+    cor: 'Branco',
+    preco: 110000,
+    disponivel: 'false',
+    garantia: '3 Anos'
+  }
+]
+Meubanco> db.veiculos.deleteOne({ _id: ObjectId('69bc84a66d3d1108407c290f')})
+{ acknowledged: true, deletedCount: 1 }
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc837a6d3d1108407c2908'),
+    tipo: 'carro',
+    marca: 'Ford',
+    modelo: 'Fusion',
+    ano: 2018,
+    cor: 'Prata',
+    preco: 90000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true,
+    garantia: '3 Anos'
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84866d3d1108407c290e'),
+    tipo: 'caminhao',
+    marca: 'Mercedes-Benz',
+    modelo: 'Actros',
+    ano: 2019,
+    cor: 'Cinza',
+    preco: 450000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc85706d3d1108407c2910'),
+    tipo: 'carro',
+    marca: 'Honda',
+    modelo: 'Civic',
+    ano: 2021,
+    cor: 'Branco',
+    preco: 110000,
+    disponivel: 'false',
+    garantia: '3 Anos'
+  }
+]
+Meubanco> db.veiculos.deleteMany({ ano: {$lte : 2019}})
+{ acknowledged: true, deletedCount: 2 }
+Meubanco> db.veiculos.find()
+[
+  {
+    _id: ObjectId('69bc82b46d3d1108407c2907'),
+    tipo: 'carro',
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    ano: 2022,
+    cor: 'Preto',
+    preco: 120000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83a16d3d1108407c2909'),
+    tipo: 'moto',
+    marca: 'Yamaha',
+    modelo: 'MT-07',
+    ano: 2023,
+    cor: 'Azul',
+    preco: 55000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc83f46d3d1108407c290a'),
+    tipo: 'moto',
+    marca: 'Honda',
+    modelo: 'CB 500X',
+    ano: 2022,
+    cor: 'Vermelho',
+    preco: 42000,
+    disponivel: true,
+    garantia: '3 Anos'
+  },
+  {
+    _id: ObjectId('69bc841f6d3d1108407c290b'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc84416d3d1108407c290c'),
+    tipo: 'moto',
+    marca: 'Kawasaki',
+    modelo: 'Ninja 400',
+    ano: 2021,
+    cor: 'Verde',
+    preco: 39000,
+    disponivel: true
+  },
+  {
+    _id: ObjectId('69bc85706d3d1108407c2910'),
+    tipo: 'carro',
+    marca: 'Honda',
+    modelo: 'Civic',
+    ano: 2021,
+    cor: 'Branco',
+    preco: 110000,
+    disponivel: 'false',
+    garantia: '3 Anos'
+  }
+]
+Meubanco>
